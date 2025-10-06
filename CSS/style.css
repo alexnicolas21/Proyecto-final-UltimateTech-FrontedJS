@@ -1,0 +1,257 @@
+/* Reset de css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+
+  font-size: 62.5%;
+}
+body {
+  font-family: "Saira Condensed", sans-serif;
+  font-size: 1.6rem;
+  line-height: 1.5;
+  background-color: #d21f3c;
+  
+  background-image: url('../imagenes/Smartphones-gama-alta-2023-1000x664.jpeg');
+  background-size: cover;    
+  background-repeat: no-repeat; 
+
+  color: #e5e6e8;
+
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
+.header {
+   background-color: rgba(5, 9, 210, 0.5); 
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  padding: 1rem;
+  margin-left: 2rem;
+
+  font-size: 3rem;
+  font-weight: bold;
+}
+.header__logo a {
+  color: white;
+  text-decoration: none;
+}
+
+.header__nav {
+  padding: 1rem;
+  margin-right: 2rem;
+}
+
+.header__nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.header__nav li {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.header__nav a {
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.footer {
+  background-color: rgba(5, 9, 210, 0.5);
+
+  padding: 2rem;
+  color: white;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 2rem; /* 20px */
+}
+
+
+main {
+  width: 90%;
+  flex: 1;
+  margin: 2rem auto;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main h1 {
+  font-size: 4rem;
+  margin: 2rem 0;
+}
+
+main .parrafo-home {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 80%;
+}
+
+.productos-home {
+  width: 100%;
+}
+
+.productos-home h2 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
+  margin: 3rem;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.tarjeta-producto {
+  background-color: rgba(5, 9, 210, 0.5);
+  padding: 1rem;
+  border-radius: 1rem;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tarjeta-home {
+  background-color: rgba(5, 8, 210, 0.5);
+  padding: 3rem;       
+  border-radius: 1rem; 
+  text-align: center;
+  width: 80%;          
+  max-width: 800px;   
+  margin-bottom: 3rem; 
+}
+
+.tarjeta-home h1,
+.tarjeta-home h2,
+.tarjeta-home p {
+  color: #e5e6e8; 
+}
+
+
+.tarjeta-producto h3 {
+  font-size: 2.5rem;
+}
+
+.tarjeta-producto p {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.tarjeta-producto img {
+  width: 250px;
+  height: 250px;  
+  object-fit: cover; 
+  border-radius: 0.5rem;
+}
+
+/*Contacto*/
+.seccion-contacto {
+  width: 100%;
+
+  margin: 2rem auto;
+}
+
+.titulo-contacto {
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.form {
+  background-color: rgba(5, 9, 210, 0.5);
+  padding: 5rem;
+  border-radius: 1rem;
+
+  width: 60rem; /* ancho relativo */
+
+  margin: auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.campo-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.campo-form label {
+  font-size: 2rem;
+}
+.campo-form input,
+.campo-form textarea {
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: 0.5rem;
+  border: none;
+}
+
+.form button {
+  background-color: #d21f3c;
+  color: #e5e6e8;
+  border: none;
+  padding: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+/*Media queries*/
+
+@media (max-width: 768px) {
+  .header {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header__logo,
+  .header__nav {
+    margin: 0;
+  }
+
+  .contenedor-tarjetas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .tarjeta-producto {
+    width: 80%;
+  }
+  .form {
+    width: 80%;
+    min-width: 400px;
+  }
+}

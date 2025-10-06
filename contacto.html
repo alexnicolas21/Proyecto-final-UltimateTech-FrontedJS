@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>UltimateTech</title>
+</head>
+<body>
+        <header class="header">
+      <p class="header__logo">
+        <a href="../index.html">Tienda Embark</a>
+      </p>
+      <nav class="header__nav">
+        <ul>
+          <li>
+            <a href="../Proyecto final UltimateTech FrontedJS/index.html">Home</a>
+          </li>
+          <li>
+            <a href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="seccion-contacto">
+        <h1 class="titulo-contacto">Contacto</h1>
+        <form
+          class="form"
+          action="https://formspree.io/f/mblzkzqy"
+          method="POST"
+        >
+          <div class="campo-form">
+            <label for="Nombre"> Nombre:</label>
+            <input id="nombre" type="text" name="nombre" />
+          </div>
+          <div class="campo-form">
+            <label for="email"> Correo electronico:</label>
+            <input id="email" type="email" name="email" />
+          </div>
+          <div class="campo-form">
+            <label for="mensaje"> Mensaje:</label>
+            <textarea id="mensaje" name="message"></textarea>
+          </div>
+          <input type="hidden" name="subject" value="Contacto desde el sitio" />
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <nav>
+        <ul>
+          <li>Instagram</li>
+          <li>Facebook</li>
+          <li>X</li>
+        </ul>
+      </nav>
+    </footer>
+</body>
+</html>
