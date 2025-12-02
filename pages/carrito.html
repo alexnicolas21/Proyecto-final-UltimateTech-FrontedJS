@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./CSS/style.css" />
+    <link rel="stylesheet" href="../css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <title>UltimeTech</title>
+    <title>UltimateTech</title>
 </head>
 <body>
     <header class="header">
       <p class="header__logo">
-        <a href="./index.html">UltimateTech</a>
+        <a href="../index.html">UltimateTech</a>
       </p>
       <nav class="header__nav">
         <ul>
@@ -20,28 +20,29 @@
             <a href="../index.html">Home</a>
           </li>
           <li>
-            <a href="./pages/contacto.html">Contacto</a>
+            <a href="./contacto.html">Contacto</a>
           </li>
           <li>
-            <a href="./pages/carrito.html" class="carrito-icono">Carrito</a>
-               <span id="contador-carrito">0</span>
+            <a href="./carrito.html" class="carrito-icono"></a>
+            <span id="contador-carrito">0</span>
           </li>
         </ul>
       </nav>
     </header>
     <main>
-      <div class="tarjeta-home">
-      <h1 class="titulo-home">Bienvenidos a UltimateTech</h1>
-      <p class="parrafo-home">
-        UltimateTech es la tienda online mas grande de Latinoamerica
-        Nos dedicamos a la venta de Smartphones de Alta Gama al mejor precio y calidad de toda la region. Ademas, brindamos servicio tecnico con repuestos originales directamente de fabrica.
-        <h2>Los productos mas recomendados por nuestros consumidores:</h2>
-      </p>
-     </div>
-      <section class="productos-home">
-
-        <div id="contenedor-tarjetas" class="contenedor-tarjetas">
-        </div>
+       <div class="tarjeta-home">
+       <h1 class="titulo-homee">Carrito de compras</h1>
+      </div>
+      
+      <section id="lista-carrito" class="lista-carrito"></section>
+      </section>
+      
+      
+      <section class="acciones-carrito" id="acciones-carrito">
+      </section> 
+      </div>
+      <section id="resumen-carrito">
+        
       </section>
     </main>
     <footer class="footer">
@@ -53,6 +54,6 @@
         </ul>
       </nav>
     </footer>
-    </body>
-  <script type="module" src="./js/index.js"></script>
+     <script src="../js/carrito.js" type="module"></script>
+</body>
 </html>

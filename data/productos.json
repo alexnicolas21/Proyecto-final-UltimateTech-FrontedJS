@@ -1,0 +1,6 @@
+[
+  {"id": "1","nombre": "Producto 1", "precio": 10000, "img": "img/xiaomi.png"},
+  {"id": "2","nombre": "Producto 2", "precio": 45000, "img": "img/Motorola-Edge-50-Ultra.png"},
+  {"id": "3","nombre": "Producto 3", "precio": 300200, "img": "img/note20ultra.png"},
+  {"id": "6","nombre": "Producto 4", "precio": 133400, "img": "img/s25ultra.png"}
+]
